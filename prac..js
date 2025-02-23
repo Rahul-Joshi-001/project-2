@@ -32,5 +32,5 @@ let parat = document.querySelector("#parat")
 parat.addEventListener("input",function(){
   let filteredText = parat.value.replace(/[^A-Za-z\s]/g, "");
   parat.value = filteredText;
-  para.innerText = filteredText;
+  para5.innerText = filteredText;
 })
