@@ -1,15 +1,36 @@
-let student = {
-  name :"rahul",
-  course : "btch",
-};
-let student2 = {
-  roll : 23,
-  age : 17,
-  name : "rohan",
-};
+let a = document.querySelector("#btn1");
+// a.addEventListener("mouseout",function(){
+//   console.log("mouseout function is triggered!");
+// })
 
-const margeobject = (student,student2) => {
-  return{...student,...student2};
-};
+b = document.querySelector("#inp1");
 
-console.log(margeobject(student,student2));
+b.addEventListener("keypress",function(){
+  console.log("keypress function is triggered!");
+})
+
+let div = document.querySelector("#scrollDiv");
+
+div.addEventListener("scroll", function() {
+  console.log("Div is being scrolled!");
+});
+
+window.addEventListener("load", function() {
+  console.log("Page has fully loaded!");
+});
+
+
+let btn2 = document.querySelector("#btn2");
+btn2.addEventListener("click",function(){
+  btn2.style.backgroundColor = "green";
+});
+
+
+let para5 = document.querySelector("#para5");
+let parat = document.querySelector("#parat")
+
+parat.addEventListener("input",function(){
+  let filteredText = parat.value.replace(/[^A-Za-z\s]/g, "");
+  parat.value = filteredText;
+  para.innerText = filteredText;
+})

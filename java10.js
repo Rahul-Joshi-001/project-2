@@ -106,3 +106,12 @@ console.log(text.value);
 paraa.innerText = text.value;
 } );
 
+let para5 = document.querySelector("#para5");
+let parat = document.querySelector("#parat")
+
+parat.addEventListener("input",function(){
+  let filteredText = parat.value.replace(/[^A-Za-z\s]/g, "");
+  parat.value = filteredText;
+  para.innerText = filteredText;
+})
+
